@@ -18,13 +18,14 @@
             position: relative;
         }
 
-        /* Background Image - Full visible without dark overlay */
+        /* Background Image - HD Quality */
         body {
-            background-image: url('https://i.pinimg.com/736x/af/81/06/af810696a09689930f0f4eb1b3e69a85.jpg');
+            background-image: url('https://i.pinimg.com/1200x/fc/5a/75/fc5a7534df10653510b5f77bd42152bb.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            image-rendering: -webkit-optimize-contrast; /* Membuat gambar terlihat lebih tajam */
         }
 
         /* Light overlay - very subtle for better text readability */
@@ -830,7 +831,7 @@
         setInterval(updateDashboard, 1000);
         updateDashboard();
         
-        console.log("Dashboard ready dengan background image yang jelas terlihat!");
+        console.log("Dashboard ready dengan background image HD yang jelas terlihat!");
         console.log("Fungsi tambahan: window.addDisruption(bank, start, end, message), window.removeDisruption(bank)");
         
         window.addDisruption = function(bank, start, end, message) {
