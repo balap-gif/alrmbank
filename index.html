@@ -340,7 +340,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="header">
-            <h1>Jadwal Bank & E-Wallet Monitor with Countdown</h1>
+            <h1>DASBOARD JAM ALARM BANK HOKBENTOTO</h1>
             <div class="clock-panel">
                 <div class="current-time" id="currentTime">--:--:--</div>
                 <div class="current-date" id="currentDate">--</div>
@@ -365,7 +365,7 @@
         </div>
         <div class="footer">
             ⏰ Timer countdown menunjukkan waktu tersisa sebelum bank offline atau gangguan terjadi.<br>
-            ⚠️ Warna oranye menandakan akan segera offline (kurang dari 30 menit), merah kurang dari 5 menit.
+            ⚠️ Warna oranye menandakan akan segera offline (kurang dari 20 menit), merah kurang dari 5 menit.
         </div>
     </div>
 
@@ -523,13 +523,13 @@
             }
         }
         
-        // Pengingat Cek Saldo QRIS setiap 30 menit (berjalan terus menerus 30 menit sekali)
+        // Pengingat Cek Saldo QRIS setiap 20 menit (berjalan terus menerus 20 menit sekali)
         setInterval(() => {
             if (soundEnabled) {
                 speakAlert("Silahkan Cek Saldo Qris Anda Terimakasih");
-                addLog("🔊 Pengingat 30 Menit: Silahkan Cek Saldo Qris Anda Terimakasih", true);
+                addLog("🔊 Pengingat 20 Menit: Silahkan Cek Saldo Qris Anda Terimakasih", true);
             }
-        }, 30 * 60 * 1000); // 30 menit dalam milidetik (1.800.000 ms)
+        }, 30 * 60 * 1000); // 20 menit dalam milidetik (1.800.000 ms)
 
         // Menghitung waktu hingga event offline berikutnya
         function getNextOfflineTime(bankName, currentMinutes, dayOfWeek) {
